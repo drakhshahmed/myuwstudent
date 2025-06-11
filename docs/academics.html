@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics - MyUW</title>
+  <style>
+    body { margin: 0; font-family: "Segoe UI", sans-serif; display: flex; }
+    .sidebar { width: 220px; background-color: #4b2e83; color: white; padding-top: 20px; height: 100vh; }
+    .sidebar h2 { text-align: center; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar ul li { padding: 10px 20px; }
+    .sidebar ul li a { color: white; text-decoration: none; display: block; }
+    .sidebar ul li a:hover { background-color: #3a2165; }
+    .main { flex: 1; padding: 20px; }
+    .top-bar { background-color: #e8e8e8; padding: 10px 20px; font-size: 14px; display: flex; justify-content: space-between; }
+    .section { background: white; padding: 20px; border: 1px solid #ccc; margin: 20px 0; }
+    .grades-table { width: 100%; border-collapse: collapse; }
+    .grades-table th, .grades-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    .details { background: #f9f9f9; padding: 10px; border-left: 4px solid #4b2e83; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>MyUW</h2>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="#" onclick="showError()">Accounts</a></li>
+      <li><a href="#" onclick="showError()">Notices</a></li>
+      <li><a href="#" onclick="showError()">Profile</a></li>
+      <li><a href="#" onclick="showError()">Calendar</a></li>
+      <li><a href="#" onclick="showError()">UW Resources</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="top-bar">
+      <div>Spring 2025 | Finals Week</div>
+      <div>Student Husky: $0.00 | <a href="#">Sign Out</a></div>
+    </div>
+    <div class="section">
+      <h3>Your Advisers</h3>
+      <p><a href="#">Find an advising office's contact information</a></p>
+      <p><strong>Your Major:</strong> Premajor (Tacoma Campus)</p>
+    </div>
+    <div class="section">
+      <h3>Final Grades</h3>
+      <table class="grades-table">
+        <tr><th>Course</th><th>Grade</th></tr>
+        <tr><td>T GEOS 117</td><td>3.9</td></tr>
+        <tr><td>T BECON 221</td><td>3.8</td></tr>
+        <tr><td>T MATH 110</td><td>3.3</td></tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="details">
+        <p><strong>T GEOS 117 A - PHYSICAL GEOLOGY</strong></p>
+        <p>Instructor: Jigjidsurenjin Batbaatar</p>
+        <p>Lecture: M/W 3:40–5:40 PM, Lab: W 1:00–3:30 PM (SCI 209)</p>
+        <p>Email: bataa@uw.edu</p>
+      </div>
+      <div class="details">
+        <p><strong>T BECON 221 A - INTRO TO MACRO ECON</strong></p>
+        <p>Instructor: Stephen Norman</p>
+        <p>Lecture: M/W 9:30–10:50 AM (TLB 109)</p>
+        <p>Email: snormanse@uw.edu</p>
+      </div>
+      <div class="details">
+        <p><strong>T MATH 110 G - INTRO STAT APPLICNTS</strong></p>
+        <p>Instructor: Haley Skipper</p>
+        <p>Lecture: M/W 5:50–7:50 PM (JOY 110)</p>
+        <p>Email: hskipper@uw.edu</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showError() {
+      alert("Error 404: This page is currently unavailable.");
+    }
+  </script>
+</body>
+</html>
