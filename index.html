@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Portal Demo - Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="left">
+      <div class="userline">👤 <strong id="displayName">Khunsha Nawal</strong></div>
+      <div class="brand">MyPortal</div>
+    </div>
+    <nav class="toplinks">
+      <a href="#" onclick="alert('Demo only');return false;">Email</a>
+      <a href="#" onclick="alert('Demo only');return false;">Search</a>
+      <a href="#" onclick="alert('Demo only');return false;">Sign Out</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="navitem" data-page href="index.html">🏠 Home</a>
+      <a class="navitem" data-page href="academics.html">🎓 Academics</a>
+      <a class="navitem" data-page href="accounts.html">💳 Accounts</a>
+      <a class="navitem" data-page href="notices.html">⚠️ Notices</a>
+      <a class="navitem" data-page href="profile.html">👤 Profile</a>
+
+      <div class="navgroup">
+        <a href="calendar.html">📅 Calendar</a>
+        <a href="resources.html">📌 Resources</a>
+      </div>
+
+      <div class="navgroup">
+        <div class="muted" style="font-size:13px">Student-made UI demo</div>
+        <div class="muted" style="font-size:13px">Not affiliated with any university</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="pagehead">
+        <div>
+          <div class="term">📅 <strong>2026</strong></div>
+          <div style="font-size:22px; font-weight:700; margin-top:4px;">Winter Break</div>
+        </div>
+        <div class="kicker">Most updates become available after 15 minutes.</div>
+      </div>
+
+      <section class="card">
+        <div class="title">
+          Notices
+          <span class="smallnote"> </span>
+        </div>
+        <div class="body">
+          <ul class="notice-list">
+            <li><span class="critical">Critical:</span> <a href="notices.html">Tuition Due</a></li>
+            <li><span class="critical">Critical:</span> <a href="notices.html">Registration Block: Student Vaccination Requirement</a> <span style="background:#ffdf5d;padding:2px 6px;border-radius:4px;font-size:12px;">New</span></li>
+            <li><span class="critical">Critical:</span> <a href="notices.html">Enroll in Direct Deposit for Aid Funds</a></li>
+            <!-- removed: Missing 2025-2026 Financial Aid Documents -->
+            <li><span class="critical">Critical:</span> <a href="notices.html">Registration/Transcript Holds</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">Final Grades</div>
+        <div class="body">
+          <div class="muted">Final grades are hidden to protect your privacy.</div>
+          <div style="margin-top:8px;">
+            <a href="academics.html" style="color:var(--link);text-decoration:none;">View final grades</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">Resources</div>
+        <div class="body">
+          Explore tools, services, and resources by popular topics.
+        </div>
+      </section>
+    </main>
+
+    <aside class="rightcol">
+      <section class="card">
+        <div class="title">Quick Links</div>
+        <div class="body">
+          <ul class="quicklinks">
+            <li><a href="#" onclick="alert('Demo only');return false;">Canvas LMS</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">MyPlan</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Degree Audit (DARS)</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Register</a></li>
+            <li><a href="academics.html">Grade Report</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Financial Aid Status</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Tuition Statement</a></li>
+            <!-- removed everywhere: Unofficial Transcript -->
+            <li><a href="#" onclick="alert('Demo only');return false;">Directory Search</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Identity</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Google Apps</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Office 365 Apps</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Zoom</a></li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <a href="#" onclick="alert('Demo only');return false;">Contact</a>
+    <a href="#" onclick="alert('Demo only');return false;">Help</a>
+    <a href="#" onclick="alert('Demo only');return false;">Terms</a>
+    <a href="#" onclick="alert('Demo only');return false;">Privacy</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
