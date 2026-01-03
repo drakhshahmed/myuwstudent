@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Portal Demo - Academics</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="left">
+      <div class="userline">👤 <strong>Drakhsh Ahmed</strong></div>
+      <div class="brand">MyPortal</div>
+    </div>
+    <nav class="toplinks">
+      <a href="#" onclick="alert('Demo only');return false;">Email</a>
+      <a href="#" onclick="alert('Demo only');return false;">Search</a>
+      <a href="#" onclick="alert('Demo only');return false;">Sign Out</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="navitem" data-page href="index.html">🏠 Home</a>
+      <a class="navitem" data-page href="academics.html">🎓 Academics</a>
+      <a class="navitem" data-page href="accounts.html">💳 Accounts</a>
+      <a class="navitem" data-page href="notices.html">⚠️ Notices</a>
+      <a class="navitem" data-page href="profile.html">👤 Profile</a>
+      <div class="navgroup">
+        <a href="calendar.html">📅 Calendar</a>
+        <a href="resources.html">📌 Resources</a>
+      </div>
+      <div class="navgroup">
+        <div class="muted" style="font-size:13px">Student-made UI demo</div>
+        <div class="muted" style="font-size:13px">Not affiliated</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="pagehead">
+        <div>
+          <h1>Academics</h1>
+          <div class="kicker">Demo academic overview</div>
+        </div>
+      </div>
+
+      <section class="card">
+        <div class="title">Final Grades</div>
+        <div class="body">
+          <div style="display:flex; gap:14px; align-items:center; margin-bottom:10px;">
+            <div style="width:12px;height:12px;background:#1f77b4"></div> BDUC 210
+            <div style="margin-left:auto;font-weight:700;">3.9</div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:center; margin-bottom:10px;">
+            <div style="width:12px;height:12px;background:#8c564b"></div> BCHEM 250
+            <div style="margin-left:auto;font-weight:700;">3.7</div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:center;">
+            <div style="width:12px;height:12px;background:#2ca02c"></div> BIS 134
+            <div style="margin-left:auto;font-weight:700;">3.1</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">Registration</div>
+        <div class="body">
+          <div class="muted">No winter registration found (demo text).</div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="rightcol">
+      <section class="card">
+        <div class="title">Registration</div>
+        <div class="body">
+          <ul class="quicklinks">
+            <li><a href="#" onclick="alert('Demo only');return false;">Degree Audit</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">MyPlan</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Registration</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="title">Grades &amp; Transcripts</div>
+        <div class="body">
+          <ul class="quicklinks">
+            <li><a href="#" onclick="alert('Demo only');return false;">GPA Calculator</a></li>
+            <li><a href="academics.html">Grade Report</a></li>
+            <!-- removed: Unofficial Transcript -->
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <a href="#" onclick="alert('Demo only');return false;">Contact</a>
+    <a href="#" onclick="alert('Demo only');return false;">Help</a>
+    <a href="#" onclick="alert('Demo only');return false;">Terms</a>
+    <a href="#" onclick="alert('Demo only');return false;">Privacy</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
