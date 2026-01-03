@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+  <!-- Top bar -->
   <header class="topbar">
     <div class="left">
-      <div class="userline">👤 <strong id="displayName">Khunsha Nawal</strong></div>
+      <div class="userline">👤 <strong>Drakhsh Ahmed</strong></div>
       <div class="brand">MyPortal</div>
     </div>
     <nav class="toplinks">
@@ -20,6 +21,7 @@
   </header>
 
   <div class="shell">
+    <!-- Left nav -->
     <aside class="sidebar">
       <a class="navitem" data-page href="index.html">🏠 Home</a>
       <a class="navitem" data-page href="academics.html">🎓 Academics</a>
@@ -34,11 +36,13 @@
 
       <div class="navgroup">
         <div class="muted" style="font-size:13px">Student-made UI demo</div>
-        <div class="muted" style="font-size:13px">Not affiliated with any university</div>
+        <div class="muted" style="font-size:13px">Not affiliated</div>
       </div>
     </aside>
 
+    <!-- Center content -->
     <main class="main">
+      <!-- term header like your screenshot -->
       <div class="pagehead">
         <div>
           <div class="term">📅 <strong>2026</strong></div>
@@ -47,22 +51,31 @@
         <div class="kicker">Most updates become available after 15 minutes.</div>
       </div>
 
+      <!-- Notices card -->
       <section class="card">
         <div class="title">
           Notices
-          <span class="smallnote"> </span>
+          <span class="smallnote"></span>
         </div>
         <div class="body">
           <ul class="notice-list">
             <li><span class="critical">Critical:</span> <a href="notices.html">Tuition Due</a></li>
-            <li><span class="critical">Critical:</span> <a href="notices.html">Registration Block: Student Vaccination Requirement</a> <span style="background:#ffdf5d;padding:2px 6px;border-radius:4px;font-size:12px;">New</span></li>
+            <li>
+              <span class="critical">Critical:</span>
+              <a href="notices.html">Registration Block: Student Vaccination Requirement</a>
+              <span style="background:#ffdf5d;padding:2px 6px;border-radius:4px;font-size:12px;">New</span>
+            </li>
             <li><span class="critical">Critical:</span> <a href="notices.html">Enroll in Direct Deposit for Aid Funds</a></li>
-            <!-- removed: Missing 2025-2026 Financial Aid Documents -->
+
+            <!-- ✅ removed: Missing 2025-2026 Financial Aid Documents -->
+
             <li><span class="critical">Critical:</span> <a href="notices.html">Registration/Transcript Holds</a></li>
+            <li>Deadline to Change Grading Option <span style="background:#ffdf5d;padding:2px 6px;border-radius:4px;font-size:12px;">New</span></li>
           </ul>
         </div>
       </section>
 
+      <!-- Final Grades card -->
       <section class="card">
         <div class="title">Final Grades</div>
         <div class="body">
@@ -73,14 +86,24 @@
         </div>
       </section>
 
+      <!-- Registration card -->
       <section class="card">
-        <div class="title">Resources</div>
+        <div class="title">Registration</div>
         <div class="body">
-          Explore tools, services, and resources by popular topics.
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:18px;">⚠️</span>
+            <strong>2 holds</strong>
+          </div>
+          <div class="muted">No courses in your plan (demo text).</div>
+          <div style="margin-top:10px;">
+            <button style="border:1px solid var(--line);background:#f3f4f6;border-radius:8px;padding:6px 10px;cursor:pointer"
+              onclick="alert('Demo only');return false;">Go to Register</button>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- Right quick links -->
     <aside class="rightcol">
       <section class="card">
         <div class="title">Quick Links</div>
@@ -88,17 +111,12 @@
           <ul class="quicklinks">
             <li><a href="#" onclick="alert('Demo only');return false;">Canvas LMS</a></li>
             <li><a href="#" onclick="alert('Demo only');return false;">MyPlan</a></li>
-            <li><a href="#" onclick="alert('Demo only');return false;">Degree Audit (DARS)</a></li>
-            <li><a href="#" onclick="alert('Demo only');return false;">Register</a></li>
+            <li><a href="#" onclick="alert('Demo only');return false;">Registration</a></li>
             <li><a href="academics.html">Grade Report</a></li>
-            <li><a href="#" onclick="alert('Demo only');return false;">Financial Aid Status</a></li>
-            <li><a href="#" onclick="alert('Demo only');return false;">Tuition Statement</a></li>
-            <!-- removed everywhere: Unofficial Transcript -->
-            <li><a href="#" onclick="alert('Demo only');return false;">Directory Search</a></li>
-            <li><a href="#" onclick="alert('Demo only');return false;">Identity</a></li>
             <li><a href="#" onclick="alert('Demo only');return false;">Google Apps</a></li>
-            <li><a href="#" onclick="alert('Demo only');return false;">Office 365 Apps</a></li>
             <li><a href="#" onclick="alert('Demo only');return false;">Zoom</a></li>
+
+            <!-- ✅ removed everywhere: Unofficial Transcript -->
           </ul>
         </div>
       </section>
