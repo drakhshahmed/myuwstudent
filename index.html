@@ -1,104 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyUW</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      display: flex;
-      background: #f5f5f5;
-    }
-    .sidebar {
-      background: #4b2e83;
-      width: 220px;
-      color: white;
-      min-height: 100vh;
-      padding-top: 20px;
-    }
-    .sidebar h2 { text-align: center; }
-    .sidebar ul { list-style: none; padding: 0; }
-    .sidebar li { padding: 10px 20px; }
-    .sidebar a { color: white; text-decoration: none; display: block; }
-    .sidebar a:hover { background-color: #3a2165; }
-    .main-content {
-      flex: 1;
-      padding: 20px;
-      position: relative;
-    }
-    .top-bar {
-      background: #e8e8e8;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .notice-box, .grades-box {
-      background: white;
-      margin-top: 20px;
-      padding: 20px;
-      border: 1px solid #ccc;
-    }
-    .alert-critical { color: red; font-weight: bold; }
-    .quick-links {
-      position: absolute;
-      right: 20px;
-      top: 80px;
-      font-size: 13px;
-    }
-    .quick-links a { color: #336699; text-decoration: none; display: block; margin-bottom: 5px; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Portal Demo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <h2>MyUW</h2>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="academics.html">Academics</a></li>
-      <li><a href="#" onclick="showError()">Accounts</a></li>
-      <li><a href="#" onclick="showError()">Notices</a></li>
-      <li><a href="#" onclick="showError()">Profile</a></li>
-      <li><a href="#" onclick="showError()">Calendar</a></li>
-      <li><a href="#" onclick="showError()">UW Resources</a></li>
-    </ul>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <div class="brand-title">Student Portal</div>
+          <div class="brand-sub">Demo (Not affiliated)</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item is-active" data-page="dashboard">Dashboard</button>
+        <button class="nav-item" data-page="classes">Classes</button>
+        <button class="nav-item" data-page="finances">Finances</button>
+        <button class="nav-item" data-page="profile">Profile</button>
+        <button class="nav-item" data-page="settings">Settings</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="pill">Local demo</div>
+        <div class="muted">No real accounts.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Dashboard</h1>
+          <p class="muted" id="pageSub">Overview of your week</p>
+        </div>
+        <div class="topbar-right">
+          <input class="search" placeholder="Search (demo)" />
+          <div class="avatar" title="User"></div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <article class="card span-2">
+          <div class="card-title">Today</div>
+          <div class="card-body">
+            <ul class="list">
+              <li><strong>INFO 200</strong> — 10:30 AM</li>
+              <li><strong>Bus to Bothell</strong> — 9:15 AM</li>
+              <li><strong>Workout</strong> — 7:00 PM</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Holds</div>
+          <div class="card-body">
+            <div class="big">0</div>
+            <div class="muted">No registration holds</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Balance</div>
+          <div class="card-body">
+            <div class="big">$0.00</div>
+            <div class="muted">Demo display</div>
+          </div>
+        </article>
+
+        <article class="card span-2">
+          <div class="card-title">Schedule</div>
+          <div class="card-body">
+            <div class="table">
+              <div class="row header">
+                <div>Course</div><div>Days</div><div>Time</div><div>Location</div>
+              </div>
+              <div class="row">
+                <div>INFO 200</div><div>MW</div><div>10:30–11:50</div><div>Bothell</div>
+              </div>
+              <div class="row">
+                <div>STAT 221</div><div>TTh</div><div>1:30–2:50</div><div>Online</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Quick Links</div>
+          <div class="card-body">
+            <div class="links">
+              <a href="academics.html" class="link">Academics</a>
+              <a href="#" class="link">Registration</a>
+              <a href="#" class="link">Payments</a>
+              <a href="#" class="link">Grades</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer muted">
+        Educational UI demo. Not affiliated with any university.
+      </footer>
+    </main>
   </div>
-  <div class="main-content">
-    <div class="top-bar">
-      <div>Spring 2025 | Finals Week</div>
-      <div>Student Husky: $0.00 | <a href="#">Sign Out</a></div>
-    </div>
-    <div class="notice-box">
-      <h3>Notices</h3>
-      <p><span class="alert-critical">Critical:</span> Registration Block: UW Student Vaccination Requirement</p>
-      <p><span class="alert-critical">Critical:</span> Registration/Transcript Holds</p>
-      <p>Deadline to Change Grading Option <span style="background: yellow; padding: 2px 6px; border-radius: 3px;">New</span></p>
-      <p>If you registered for Summer or Autumn 2025 courses, we want to hear from you <span style="background: yellow; padding: 2px 6px; border-radius: 3px;">New</span></p>
-    </div>
-    <div class="grades-box">
-      <h3>Final Grades</h3>
-      <p>Final grades are hidden to protect your privacy. <a href="academics.html">View final grades</a></p>
-    </div>
-    <div class="grades-box">
-      <h3>Registration: Autumn 2025</h3>
-      <p><span style="color:red;">⚠️ 2 holds</span></p>
-      <p>No courses in your plan</p>
-      <button>Go to Register.UW</button>
-    </div>
-  </div>
-  <div class="quick-links">
-    <h4>Quick Links</h4>
-    <a href="#">Canvas LMS</a>
-    <a href="#">MyPlan</a>
-    <a href="#">Registration</a>
-    <a href="#">Time Schedule - Tacoma</a>
-    <a href="#">Google Apps</a>
-    <a href="#">Zoom</a>
-  </div>
-  <script>
-    function showError() {
-      alert("Error 404: This page is currently unavailable.");
-    }
-  </script>
+
+  <script src="app.js"></script>
 </body>
 </html>
