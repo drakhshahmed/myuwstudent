@@ -185,3 +185,22 @@ body{
   .sidebar{order:2}
   .footer{position:static}
 }
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.grade-table th {
+  background: #f3f4f6;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  font-weight: 600;
+}
+
+.grade-table td {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+}
